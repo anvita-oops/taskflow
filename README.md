@@ -57,7 +57,7 @@ A simple project management web app where users can:
 # Live URLs
 
 ## Frontend
-PASTE_YOUR_VERCEL_URL
+https://taskflow-git-main-anvita-oops-projects.vercel.app/
 
 ## Backend API
 https://web-production-40ecb.up.railway.app
