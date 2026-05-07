@@ -131,6 +131,9 @@ class AddMemberIn(BaseModel):
 # ─── APP ─────────────────────────────────────────────────────
 app = FastAPI(title="TaskFlow")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"], allow_credentials=True)
+@app.get("/")
+def home():
+    return {"message": "TaskFlow API Running"}
 
 # ─── AUTH ROUTES ─────────────────────────────────────────────
 @app.post("/api/signup")
