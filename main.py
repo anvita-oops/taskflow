@@ -135,6 +135,7 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], all
 def home():
     return {"message": "TaskFlow API Running"}
 
+
 # ─── AUTH ROUTES ─────────────────────────────────────────────
 @app.post("/api/signup")
 def signup(data: SignupIn, db: Session = Depends(get_db)):
